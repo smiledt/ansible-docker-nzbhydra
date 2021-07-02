@@ -1,0 +1,7 @@
+# This playbook deploys a NZBHydra docker container on a docker host.
+
+- name: Deploy the NZBHydra Container.
+  hosts: rr
+  become: true
+  roles:
+    - role: docker-sonarr
