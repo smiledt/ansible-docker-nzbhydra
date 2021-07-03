@@ -4,4 +4,4 @@
   hosts: rr
   become: true
   roles:
-    - role: docker-sonarr
+  - role: docker-nzbhydra
