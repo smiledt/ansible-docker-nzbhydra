@@ -7,14 +7,14 @@ nzbhydra_ports:
 nzbhydra_config_directory: /opt/nzbhydra
 nzbhydra_download_directory: /mnt/media/downloads
 nzbhydra_environment_variables:
-  PUID: '"{{ media_uid }}"'
-  PGID: '"{{ media_gid }}"'
+  PUID: "{{ media_uid }}"
+  PGID: "{{ media_gid }}"
   TZ: America/Chicago
 
 nzbhydra_docker_additional_options:
   restart_policy: unless-stopped
 
 media_user: mediasvc
-media_uid: 1099
+media_uid: "1099"
 media_group: media
-media_gid: 1099
+media_gid: "1099"

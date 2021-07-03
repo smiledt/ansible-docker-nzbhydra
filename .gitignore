@@ -2,8 +2,9 @@
 .vault_pass
 *.vaultpass
 
-# Ignore inventory files as well.
+# Ignore testing files as well.
 *.inv
+*ansible.cfg
 
 *.retry
 *.pyc
