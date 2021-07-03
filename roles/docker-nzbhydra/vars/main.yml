@@ -7,8 +7,8 @@ nzbhydra_ports:
 nzbhydra_config_directory: /opt/nzbhydra
 nzbhydra_download_directory: /mnt/media/downloads
 nzbhydra_environment_variables:
-  PUID: "{{ media_uid }}"
-  PGID: "{{ media_gid }}"
+  PUID: '"{{ media_uid }}"'
+  PGID: '"{{ media_gid }}"'
   TZ: America/Chicago
 
 nzbhydra_docker_additional_options:
