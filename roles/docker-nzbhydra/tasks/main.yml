@@ -23,7 +23,7 @@
       env: "{{ nzbhydra_environment_variables }}"
 
 - name: Create NZBHydra container
-  docker_container: "{{ nzbhydra_container_parameters | nzbhydra(nzbhydra_docker_additional_options) }}"
+  docker_container: "{{ nzbhydra_container_parameters | combine(nzbhydra_docker_additional_options) }}"
   register: nzbhydra_container
 
 - name: Wait for NZBHydra start
